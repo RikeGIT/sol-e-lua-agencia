@@ -18,6 +18,10 @@ body {
     min-height: 100vh;
 }
 
+a {
+    color: #FAFAFA;
+    text-decoration: none;
+}
 
 /* Cabeçario */
 
@@ -45,8 +49,8 @@ body {
     list-style: none;
 }
 
-.menu ul li{    
-    text-decoration: none;
+.menu ul li a{    
+    text-decoration: none;  
     font-size: 1em;
     position: relative;
 }
@@ -101,12 +105,13 @@ body {
     display: inline-block;
     align-self: flex-start;
     background: linear-gradient(90deg, rgba(253,185,39,0.15) 0%, rgba(8,8,8,0.0) 100%);
-    padding: 0.5em 1.2em;
+    padding: 0.2em 1em;
     border-radius: 1em;
     color: #FDB927;
 }
 
 .aprovado p {
+    margin-top: 1em;
     font-size: 0.8em;
     background: none;
     color: inherit;
@@ -238,4 +243,71 @@ body {
     max-width: 160px;
     max-height: 36px;
     margin: 0 2rem;
+}
+
+/* Cards de informação */
+.cards-info {
+    display: flex;
+    margin-top: 3em;
+    margin-bottom: 6em;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 0 auto;
+}
+
+.cards i {
+    font-size: 1.4em;
+    color: #FDB927;
+    margin-top: 0.4em;
+    margin-bottom: 0.6em;
+}
+
+.estrela i {
+    margin-top: 0.4em;
+}
+
+.cards h4 {
+    font-weight: 600;
+    font-size: 1em;
+    max-width: 18em;
+}
+
+.cards hr, p {
+    margin: 0;
+    color: #FAFAFA;
+}
+
+.cards p {
+    max-width: 20em;
+    font-size: 0.8em;
+}
+
+.cards::before {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0.2em;
+    background: linear-gradient(90deg, #6d4dcc57 0%, #4222a1af 50%, rgba(109, 43, 109, 0.651) 100%);
+    background-size: 200% 200%;
+    animation: gradientShift 5s ease-in-out infinite;
+    margin-bottom: 1em;
+    z-index: -1;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
