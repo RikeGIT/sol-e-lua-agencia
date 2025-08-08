@@ -1,20 +1,7 @@
-# Sol e Lua Agência
+# Sol e Lua Agência ☀️🌙
 
 Bem-vindo ao repositório do **Sol e Lua Agência**!  
 Este é um projeto ambicioso, pensado para ser a base digital de uma futura empresa de soluções web, focada em design moderno, performance e tecnologia de ponta.
-
-## Sobre o projeto
-
-O site foi desenvolvido com HTML5, CSS3 e integra recursos do Bootstrap para garantir responsividade e uma experiência visual profissional.  
-A interface apresenta um layout elegante, animações suaves e um carrossel dinâmico de logos, destacando clientes e parceiros fictícios, simulando credibilidade e alcance global.
-
-## Principais recursos
-
-- **Design responsivo**: Adapta-se perfeitamente a diferentes dispositivos.
-- **Carrossel animado de logos**: Demonstração de clientes e parceiros.
-- **Cards de serviços**: Explicam a abordagem, comunicação, escalabilidade e qualidade da agência.
-- **Animações interativas**: Menu e botões com efeitos de hover para maior engajamento.
-- **Estrutura escalável**: Pensada para crescer junto com a empresa.
 
 ## Objetivo
 
