@@ -1,0 +1,241 @@
+/* Configurações Iniciais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #FAFAFA;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(8, 8, 8);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+
+/* Cabeçario */
+
+.cabecario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 3em;
+    height: 3em;
+}
+
+.menu ul{
+    display: flex;
+    gap: 3.5em;
+    list-style: none;
+}
+
+.menu ul li{    
+    text-decoration: none;
+    font-size: 1em;
+    position: relative;
+}
+
+.menu ul li:hover {
+    color: #FDB927;
+    transform: scale(1.05);
+}
+
+.cabecario a {
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.contato {
+    padding: 0.6em;
+    font-weight: 500;
+    border-radius: 0.6em;
+    font-size: 1em;
+    background-color: #6d4dcc;
+    transition: background 0.3s, transform 0.5s;
+}
+
+.contato:hover {
+    background: #FDB927;
+    color: #222;
+    transform: scale(1.1);
+}
+
+/* Animação de hover para o menu */
+.menu ul li{
+    transition: color 0.3s, transform 0.5s;
+    position: relative;
+}
+
+.menu ul li a:hover {
+    color: #FDB927;
+    transform: scale(1.1);
+}
+
+/* Apresentação */
+
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+    gap: 1em;
+    padding: 20px;
+}
+
+.aprovado {
+    display: inline-block;
+    align-self: flex-start;
+    background: linear-gradient(90deg, rgba(253,185,39,0.15) 0%, rgba(8,8,8,0.0) 100%);
+    padding: 0.5em 1.2em;
+    border-radius: 1em;
+    color: #FDB927;
+}
+
+.aprovado p {
+    font-size: 0.8em;
+    background: none;
+    color: inherit;
+}
+
+.aprovado i {
+    color: #FDB927;
+}
+
+.apresentacao h1 {
+    font-size: 5em;
+    line-height: 1.2;
+}
+
+.descricao {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+.descricao p {
+    width: 70%;
+    font-size: 1em;
+    color: rgb(180, 180, 180);
+}
+
+.descricao a {
+    text-decoration: none;
+    display: inline-block;
+
+    padding: 1em;
+    font-weight: 600;
+    border-radius: 0.4em;
+    background-color: #6d4dcc;
+}
+
+/* Main project */
+
+.projeto-main {
+    position: relative;
+    margin-top: 4em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projeto-img-wrapper {
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projeto-img {
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.projeto-img-wrapper::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60%;
+    pointer-events: none;
+    z-index: 2;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.208) 80%,rgba(0, 0, 0, 0.349) 90%, rgba(0, 0, 0, 0.582) 100%);
+    border-radius: 0 0 2em 2em;
+}
+
+/* Carrousel de logos */
+
+.logos {
+    padding: 3em 0;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 4em;
+}
+
+.logos:before,
+.logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";   
+    z-index: 2;
+
+}
+
+.logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(8, 8, 8, 0.0) 0%, rgba(8, 8, 8, 1) 100%);
+}
+
+.logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(8, 8, 8, 0.0) 0%, rgba(8, 8, 8, 1) 100%);
+}
+
+
+.logos-slides {
+    display: flex;
+    min-width: 100%;
+    animation: 32s slide linear infinite;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.logos-slides img{
+    max-width: 160px;
+    max-height: 36px;
+    margin: 0 2rem;
+}

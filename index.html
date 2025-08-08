@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagens/Logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Sol e lua Agência</title>
+</head>
+<body>
+    <div class="container">
+        <header class="cabecario">
+            <div class="logo">
+                <img src="/imagens/Logo.png" alt="Logo da marca Sol e Lua">
+                <h2>Sol e Lua</h2>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Portfólio</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Preços</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="contato">Fale conosco</a>
+        </header>
+
+        <main>
+            <section class="apresentacao">
+                <div class="aprovado">
+                    <i class="fa-solid fa-star"></i>
+                    <p class="aprovado"> APROVADO POR MAIS DE X+ EMPRESAS NO MUNDO</p>
+                </div>
+                <h1>Planeje.&nbsp;Projete.<br>Construa.&nbsp;Mantenha.</h1>
+                <div class="descricao">
+                    <p>
+                        Soluções web sob medida para destacar sua empresa no ambiente digital. Transforme ideias em resultados com design moderno, performance e tecnologia de ponta.
+                    </p>
+                    <a href="#" class="botao">Veja nossos serviços</a>
+                </div>
+            </section>
+            <section class="projeto-main">
+                <div class="projeto-img-wrapper">
+                    <img src="/imagens/projeto.png" alt="" class="projeto-img">
+                </div>
+                <div class="logos">
+                    <div class="logos-slides">
+                        <img src="/imagens/logos/Agência GAP logo.png" alt="Logo da Agência GAP">
+                        <img src="/imagens/logos/EduSkills logo.png" alt="Logo da EduSkills">
+                        <img src="/imagens/logos/MR3 logo.png" alt="Logo da EduSkills">
+                        <img src="/imagens/logos//Inovalab logo.png" alt="Logo da Inova">
+                        <img src="/imagens/logos/Liv logo.png" alt="Logo da Liv">
+                        <img src="/imagens/logos/Policlin logo.png" alt="Logo da POLICLIN">     
+                        <img src="/imagens/logos/vivare logo.png" alt="Logo da Vivare">
+                    </div>
+                </div>
+            </section class="cards-info">
+                <div class="cards">
+                    <i class="bi bi-menu-button-wide-fill"></i>
+                    <h2>Abordagem de serviço balanceada</h2>
+                    <p>Definimos horários para cada função e gerenciamos uma fila de tarefas priorizadas, para que você possa mudar de tarefa sem atrasar os prazos.</p>
+                </div>
+                <div class="cards">
+                    <i></i>
+                    <h2>Comunicação Transparente</h2>
+                    <p>Você receberá atualizações regulares sobre o progresso, cargas de trabalho e próximos marcos, para que você sempre saiba em que ponto está seu projeto.</p>
+                </div>
+                <div class="cards">
+                    <i></i>
+                    <h2>Projetos totalmente escaláveis</h2>
+                    <p>Nosso modelo de assinatura pode ser ampliado ou reduzido conforme as demandas do seu projeto, adicionando ou removendo recursos facilmente para atender às suas necessidades.</p>
+                </div>
+                <div class="cards">
+                    <i></i>
+                    <h2>Qualidade impecável</h2>
+                    <p>Cada entrega passa por revisões, testes automatizados e verificações de desempenho, garantindo sempre a mais alta qualidade.</p>
+                </div>
+            <section>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        var copy = document.querySelector('.logos-slides').cloneNode(true);
+        document.querySelector('.logos').appendChild(copy);
+    </script>
+</body>
+</html>
